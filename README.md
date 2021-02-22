@@ -1,5 +1,5 @@
 # nlw-nodejs
-A project developed at Rocketseat's Next Level Week
+A project developed at Rocketseat's Next Level Week IV
 
 ## General Information
 
