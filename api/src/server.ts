@@ -1,17 +1,12 @@
 import 'reflect-metadata'
 import express from 'express'
+import router from './routes';
 import './database'
 
+
 const api = express()
-
-
-api.get("/", function(request, response) {
-    return response.json({message: "Hello World!"})
-})
-
-api.post("/", (request, response) => {
-    return response.json({message: "Data succesfull save!"})
-})
+api.use(express.json())
+api.use(router);
 
 const port = 3333
 
