@@ -12,7 +12,7 @@ class UserController {
         })
 
         if(userAlreadyExists) 
-            response.status(400).send({
+            return response.status(400).send({
                 error: "User already exists!"
             })
 
